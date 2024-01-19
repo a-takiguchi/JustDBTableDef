@@ -75,7 +75,6 @@ type Record struct {
     Status []string `json:"field_1704781365"`
     Note string `json:"field_1704781345"`
     ID []string `json:"field_1704782697"`
-    ContractID json.Number `json:"field_1684835964"`
 }
 
 type Day struct {
