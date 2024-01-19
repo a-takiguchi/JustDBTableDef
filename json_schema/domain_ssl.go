@@ -63,6 +63,8 @@ type DomainSSL struct {
 }
 
 type Record struct {
+    Project string `json:"field_1684834053_K"`
+    Customer string `json:"field_1670909964_K22"`
     AWSAccountID string `json:"field_1704780408"`
     Registrar string `json:"field_1704781328"`
     RemainDays Day `json:"field_1704783209"`
@@ -73,6 +75,7 @@ type Record struct {
     Status []string `json:"field_1704781365"`
     Note string `json:"field_1704781345"`
     ID []string `json:"field_1704782697"`
+    ContractID json.Number `json:"field_1684835964"`
 }
 
 type Day struct {
