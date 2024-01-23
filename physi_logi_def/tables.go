@@ -12,6 +12,11 @@ var tables = map[string]AccessInfo{
         filterID: "filter_1704786328",
         panelID:  "panel_1704780386",
     },
+    "contruct-view": {
+        tableID: "table_1705998836",
+        filterID: "filter_1706000468",
+        panelID:  "panel_1705998821",
+    },
 }
 
 func GetTableID(alias string) string {
