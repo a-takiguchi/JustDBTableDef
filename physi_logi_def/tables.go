@@ -7,12 +7,12 @@ type AccessInfo struct {
 }
 
 var tables = map[string]AccessInfo{
-    "domain-ssl": { 
+    "domain_ssl": { 
         tableID: "table_1704780398",
         filterID: "filter_1704786328",
         panelID:  "panel_1704780386",
     },
-    "contruct-view": {
+    "contruct_view": {
         tableID: "table_1705998836",
         filterID: "filter_1706000468",
         panelID:  "panel_1705998821",
