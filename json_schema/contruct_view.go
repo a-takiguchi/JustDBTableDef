@@ -40,29 +40,7 @@ import (
 	"encoding/json"
 )
 
-type ContructView struct {
-    TableName string `json:"tableName"`
-    RecordId json.Number `json:"recordId"`
-    Reactions []string `json:"reactions"`
-    Comments []string `json:"comments"`
-    CreatedBy []string `json:"createdBy"`
-    CreatedAt string `json:"createdAt"`
-    UpdatedBy []string `json:"updatedBy"`
-    UpdatedAt string `json:"updatedAt"`
-    WorkflowName string `json:"workflowName"`
-    InsertUser []string `json:"insertUser"`
-    SubstituteUser []string `json:"substituteUser"`
-    NextApprovalUsers []string `json:"nextApprovalUsers"`
-    SubmittedAt string `json:"submittedAt"`
-    LastApprovalUser []string `json:"lastApprovalUser"`
-    ApproveAt []string `json:"approveAt"`
-    ApprovalUser []string `json:"approvalUser"`
-    ApprovalStatus string `json:"approvalStatus"`
-    RecordLink string `json:"recordLink"`
-    Record CVRecord `json:"record"`
-}
-
-type CVRecord struct {
+type ContructViewRecord struct {
     Project string `json:"field_1684834053_K"`
     Customer string `json:"field_1670909964_K22"`
     AWSAccountID string `json:"field_1704780408"`
