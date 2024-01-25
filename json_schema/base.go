@@ -23,7 +23,8 @@ type Base struct {
     ApprovalUser []string `json:"approvalUser"`
     ApprovalStatus string `json:"approvalStatus"`
     RecordLink string `json:"recordLink"`
-    Record json.RawMessage `json:"record"`
+    // Record json.RawMessage `json:"record"`
+    Record interface{} `json:"record"`
 }
 
 type Day struct {

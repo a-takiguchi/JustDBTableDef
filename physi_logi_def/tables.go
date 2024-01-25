@@ -1,5 +1,10 @@
 package physi_logi_def
 
+
+const DomainSSL string = "domain_ssl"
+const ContructView string = "contruct_view"
+
+
 type AccessInfo struct {
     tableID string
     filterID string
@@ -7,12 +12,12 @@ type AccessInfo struct {
 }
 
 var tables = map[string]AccessInfo{
-    "domain_ssl": { 
+    DomainSSL: {
         tableID: "table_1704780398",
         filterID: "filter_1704786328",
         panelID:  "panel_1704780386",
     },
-    "contruct_view": {
+    ContructView: {
         tableID: "table_1705998836",
         filterID: "filter_1706000468",
         panelID:  "panel_1705998821",
