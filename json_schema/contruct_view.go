@@ -88,9 +88,9 @@ type ContructViewRecord struct {
     ContructDate string `json:"field_1705999056"`
     ContructEndDate string `json:"field_1705999080"`
     ContructNo string `json:"field_1705999098"`
-    ShohinID json.Number `json:"field_1705999118"`
+    ShohinID string `json:"field_1705999118"`
     ShohinName string `json:"field_1705999133"`
-    PlanID json.Number `json:"field_1705999151"`
+    PlanID string `json:"field_1705999151"`
     PlanName string `json:"field_1705999162"`
 }
 
