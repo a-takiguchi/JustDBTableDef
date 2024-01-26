@@ -32,7 +32,7 @@ type DomainSSLUserConnRecord struct {
     ProjectName string `json:"field_1684834053"`
     CustomerName string `json:"field_1670909964"`
     SlackMasterID []string `json:"field_1706239242"`
-    User []string `json:"field_1706238968"`
+    User [][]string `json:"field_1706238968"`
     RoleName string `json:"field_1670910619"`
     SlackID string `json:"field_1706239002"`
 }
