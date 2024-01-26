@@ -22,7 +22,7 @@ type DomainSSLUserConn struct {
     ApprovalStatus string `json:"approvalStatus"`
     RecordLink string `json:"recordLink"`
     // Record json.RawMessage `json:"record"`
-    Record DomainSSLRecord `json:"record"`
+    Record DomainSSLUserConnRecord `json:"record"`
 }
 
 type DomainSSLUserConnRecord struct {
