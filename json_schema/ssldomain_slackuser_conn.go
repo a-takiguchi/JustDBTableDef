@@ -2,7 +2,7 @@ package json_schema
 
 import "encoding/json"
 
-type DomainSSL struct {
+type DomainSSLUserConn struct {
     TableName string `json:"tableName"`
     RecordId json.Number `json:"recordId"`
     Reactions []string `json:"reactions"`
@@ -25,19 +25,16 @@ type DomainSSL struct {
     Record DomainSSLRecord `json:"record"`
 }
 
-type DomainSSLRecord struct {
-    Project string `json:"field_1684834053_K"`
-    Customer string `json:"field_1670909964_K22"`
-    AWSAccountID string `json:"field_1704780408"`
-    Registrar string `json:"field_1704781328"`
-    RemainDays Day `json:"field_1704783209"`
-    CommonName string `json:"field_1704780847"`
-    ExpireDate string `json:"field_1704780864"`
-    DomainName string `json:"field_1704780832"`
-    PIC []string `json:"field_1704781767"`
-    Status []string `json:"field_1704781365"`
-    Note string `json:"field_1704781345"`
-    ID []string `json:"field_1704782697"`
+type DomainSSLUserConnRecord struct {
+    ID json.Number `json:"field_1705543425"`
+    Note string `json:"field_1705543479"`
+    ContructID []string `json:"field_1706239175"`
+    ProjectName string `json:"field_1684834053"`
+    CustomerName string `json:"field_1670909964"`
+    SlackMasterID []string `json:"field_1706239242"`
+    User []string `json:"field_1706238968"`
+    RoleName string `json:"field_1670910619"`
+    SlackID string `json:"field_1706239002"`
 }
 
 
