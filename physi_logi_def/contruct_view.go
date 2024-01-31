@@ -37,7 +37,7 @@ const ShohinName = "ShohinName"
 const PlanID = "PlanID"
 const PlanName = "PlanName"
 
-func getContructViewHeader() []string {
+func GetContructViewHeader() []string {
     return []string{
         ContructID,
         KeiyakuID,
