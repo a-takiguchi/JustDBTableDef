@@ -27,6 +27,7 @@ type DomainSSL struct {
 
 type DomainSSLRecord struct {
     Project string `json:"field_1684834053_K"`
+    Type string `json:"field_1670911377"`
     Customer string `json:"field_1670909964_K22"`
     AWSAccountID string `json:"field_1704780408"`
     Registrar string `json:"field_1704781328"`
