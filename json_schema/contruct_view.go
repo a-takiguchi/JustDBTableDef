@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 )
 
-type ContructView struct {
+type InContructView struct {
     TableName string `json:"tableName"`
     RecordId json.Number `json:"recordId"`
     Reactions []string `json:"reactions"`
@@ -24,10 +24,10 @@ type ContructView struct {
     ApprovalStatus string `json:"approvalStatus"`
     RecordLink string `json:"recordLink"`
     // Record json.RawMessage `json:"record"`
-    Record ContructViewRecord `json:"record"`
+    Record InContructViewRecord `json:"record"`
 }
 
-type ContructViewRecord struct {
+type InContructViewRecord struct {
     Project string `json:"field_1684834053_K"`
     Customer string `json:"field_1670909964_K22"`
     AWSAccountID string `json:"field_1704780408"`
@@ -58,3 +58,21 @@ type ContructViewRecord struct {
     PlanName string `json:"field_1705999162"`
 }
 
+type OutContructView struct {
+    ContructID json.Number `json:"ContructID"`
+    KeiyakuID json.Number `json:"KeiyakuID"`
+    KeiyakuName string `json:"KeiyakuName"`
+    KeiyakuZACCode json.Number `json:"KeiyakuZACCode"`
+    TeikyoID json.Number `json:"TeikyoID"`
+    TeikyoName string `json:"TeikyoName"`
+    TeikyoZACCode json.Number `json:"TeikyoZACCode"`
+    ProjectName string `json:"ProjectName"`
+    StartDate string `json:"StartDate"`
+    EndDate string `json:"EndDate"`
+    KeiyakuShoNumber string `json:"KeiyakuShoNumber"`
+    ContructCommonID json.Number `json:"ContructCommonID"`
+    ShohinID string `json:"ShohinID"`
+    ShohinName string `json:"ShohinName"`
+    PlanID string `json:"PlanID"`
+    PlanName string `json:"PlanName"`
+}

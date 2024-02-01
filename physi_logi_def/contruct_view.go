@@ -1,7 +1,7 @@
 package physi_logi_def
 import "encoding/json"
 
-type OutContructView struct {
+type OutJsonContructView struct {
     ContructID json.Number `json:"ContructID"`
     KeiyakuID json.Number `json:"KeiyakuID"`
     KeiyakuName string `json:"KeiyakuName"`
@@ -19,6 +19,26 @@ type OutContructView struct {
     PlanID string `json:"PlanID"`
     PlanName string `json:"PlanName"`
 }
+
+type OutCsvContructView struct {
+    ContructID int64 `csv:"ContructID"`
+    KeiyakuID int64 `csv:"KeiyakuID"`
+    KeiyakuName string `csv:"KeiyakuName"`
+    KeiyakuZACCode int64 `csv:"KeiyakuZACCode"`
+    TeikyoID int64 `csv:"TeikyoID"`
+    TeikyoName string `csv:"TeikyoName"`
+    TeikyoZACCode int64 `csv:"TeikyoZACCode"`
+    ProjectName string `csv:"ProjectName"`
+    StartDate string `csv:"StartDate"`
+    EndDate string `csv:"EndDate"`
+    KeiyakuShoNumber string `csv:"KeiyakuShoNumber"`
+    ContructCommonID int64 `csv:"ContructCommonID"`
+    ShohinID string `csv:"ShohinID"`
+    ShohinName string `csv:"ShohinName"`
+    PlanID string `csv:"PlanID"`
+    PlanName string `csv:"PlanName"`
+}
+
 
 const ContructID = "ContructID"
 const KeiyakuID = "KeiyakuID"
