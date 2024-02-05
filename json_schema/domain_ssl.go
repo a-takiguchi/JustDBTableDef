@@ -2,30 +2,7 @@ package json_schema
 
 import "encoding/json"
 
-type DomainSSL struct {
-    TableName string `json:"tableName"`
-    RecordId json.Number `json:"recordId"`
-    Reactions []string `json:"reactions"`
-    Comments []string `json:"comments"`
-    CreatedBy []string `json:"createdBy"`
-    CreatedAt string `json:"createdAt"`
-    UpdatedBy []string `json:"updatedBy"`
-    UpdatedAt string `json:"updatedAt"`
-    WorkflowName string `json:"workflowName"`
-    InsertUser []string `json:"insertUser"`
-    SubstituteUser []string `json:"substituteUser"`
-    NextApprovalUsers []string `json:"nextApprovalUsers"`
-    SubmittedAt string `json:"submittedAt"`
-    LastApprovalUser []string `json:"lastApprovalUser"`
-    ApproveAt []string `json:"approveAt"`
-    ApprovalUser []string `json:"approvalUser"`
-    ApprovalStatus string `json:"approvalStatus"`
-    RecordLink string `json:"recordLink"`
-    // Record json.RawMessage `json:"record"`
-    Record DomainSSLRecord `json:"record"`
-}
-
-type DomainSSLRecord struct {
+type InDomainSSLRecord struct {
     Project string `json:"field_1684834053_K"`
     Type string `json:"field_1670911377"`
     Customer string `json:"field_1670909964_K22"`
@@ -40,5 +17,28 @@ type DomainSSLRecord struct {
     Note string `json:"field_1704781345"`
     ID []string `json:"field_1704782697"`
 }
+
+type OutDomainSSL struct {
+    RecordId json.Number `json:"recordId" csv:"recordId"`
+    ProjectName string `json:"ProjectName "csv:"ProjectName"`
+    Type string `json:"Type" csv:"Type"`
+    Customer string `json:"CustomerName" csv:"CustomerName"`
+    AWSAccountID string `json:"AWSAccountID" csv:"AWSAccountID"`
+    Registrar string `json:"Registrar" csv:"Registrar"`
+    RemainDays Day `json:"RemainDays" csv:"RemainDays"`
+    CommonName string `json:"CommonName" csv:"CommonName"`
+    ExpireDate string `json:"ExpireDate" csv:"ExpireDate"`
+    DomainName string `json:"DomainName" csv:"DomainName"`
+    PIC []string `json:"PIC" csv:"PIC"`
+    Status []string `json:"Status" csv:"Status"`
+    Note string `json:"Note" csv:"Note"`
+    ID []string `json:"ID" csv:"ID"`
+    CreatedBy []string `json:"createdBy" csv:"createdBy"`
+    CreatedAt string `json:"createdAt" csv:"createdAt"`
+    UpdatedBy []string `json:"updatedBy" csv:"updatedBy"`
+    UpdatedAt string `json:"updatedAt" csv:"updatedAt"`
+}
+
+
 
 

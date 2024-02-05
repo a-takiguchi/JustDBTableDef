@@ -1,8 +1,8 @@
-package physi_logi_def
-
+package definition
 
 const DomainSSL string = "domain_ssl"
 const ContructView string = "contruct_view"
+const SlackUser string = "slack_user"
 const AWSList string = "aws_list"
 
 
@@ -23,6 +23,12 @@ var tables = map[string]AccessInfo{
         panelID:  "panel_1705998821",
         filterID: "filter_1706000468",
     },
+    SlackUser: {
+        tableID: "table_1705543400",
+        panelID:  "panel_1705543387",
+        filterID: "filter_1706249642",
+    },
+
     AWSList: {
         tableID: "table_1706862126",
         panelID:  "panel_1706862115",

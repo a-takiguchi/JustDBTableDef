@@ -41,7 +41,8 @@ type InContructViewRecord struct {
     Note string `json:"field_1704781345"`
     ID []string `json:"field_1704782697"`
     RecordID json.Number `json:"field_1705998856"`
-    ContructID json.Number `json:"field_1705998887"`
+    // ContructID json.Number `json:"field_1705998887"`
+    ContructID []string `json:"field_1705998887"`
     TeikyoID json.Number `json:"field_1705998905"`
     TeikyoName string `json:"field_1705998924"`
     KeiyakuID json.Number `json:"field_1705998951"`
